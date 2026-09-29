@@ -1,12 +1,21 @@
 # End-to-End Healthcare Data Pipeline & Analytics Dashboard
 
-An end-to-end healthcare data engineering and analytics project that transforms raw synthetic healthcare data into analysis-ready datasets and interactive Power BI dashboards.
+Built an end-to-end healthcare analytics pipeline that transforms raw synthetic healthcare data into analytics-ready datasets and interactive Power BI dashboards.
 
-The project uses AWS S3 for cloud storage, Databricks with PySpark and SQL for data processing and transformation, Delta tables for structured analytics layers, and Power BI for reporting and visualization.
+**Tech Stack:** AWS S3 | Databricks | PySpark | SQL | Delta Lake | Power BI
 
-## Architecture
+**Pipeline:** Synthea CSV Data → AWS S3 → Databricks → Bronze/Silver/Gold Delta Tables → Power BI
 
-Synthea Healthcare Data → AWS S3 → Databricks → PySpark / SQL → Delta Tables → Power BI
+### Project Highlights
+- Built a Medallion Architecture pipeline using PySpark and SQL for data ingestion, cleaning, validation, and aggregation.
+- Processed healthcare data covering patients, encounters, conditions, procedures, organizations, providers, and payers.
+- Created 8 Gold-layer analytical tables for business-focused reporting.
+- Built a two-page Power BI dashboard analyzing 29,561 encounters, 1,052 patients, and $3.81M in claim costs.
+- Performed data quality checks for nulls, duplicates, row counts, and derived fields.
+
+## Dashboard Preview
+
+![Executive Overview](images/executive_overview.png)
 
 ## Technologies
 
